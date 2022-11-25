@@ -1,4 +1,4 @@
 #!/bin/sh
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f ~/shprofile/bash_aliases ]; then
+    . ~/shprofile/bash_aliases
 fi
