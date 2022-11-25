@@ -16,6 +16,6 @@ alias la='ls -A'
 alias l='ls -CF'
 alias pc='proxychains'
 alias cl='clear'
-alias dc='docker-compose'
+alias dc='docker compose'
 alias f="find / -not \( -path /mnt -prune \) -name"
 alias ps='ps -ef'
