@@ -10,6 +10,10 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+myfind() {
+    find / -not \( -path /mnt -prune \) -name "$0" 2>&1 | grep -v 'Permission denied' >&2
+}
+export TERMINFO=/usr/share/terminfo
 # some more ls aliases
 alias ll='ls -alhF'
 alias la='ls -A'
@@ -17,5 +21,6 @@ alias l='ls -CF'
 alias pc='proxychains'
 alias cl='clear'
 alias dc='docker compose'
-alias f="find / -not \( -path /mnt -prune \) -name"
 alias ps='ps -ef'
+alias f=myfind
+alias curl="curl -w '\n'"
