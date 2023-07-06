@@ -11,7 +11,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 myfind() {
-    find / -not \( -path /mnt -prune \) -name "$0" 2>&1 | grep -v 'Permission denied' >&2
+    find / -not \( -path /mnt -prune \) -name "$1" 2>&1 | grep -v 'Permission denied'
 }
 export TERMINFO=/usr/share/terminfo
 # some more ls aliases
