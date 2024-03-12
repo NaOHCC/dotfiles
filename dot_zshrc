@@ -114,9 +114,7 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export ALL_PROXY=192.168.196.10:10080
-export https_proxy=$ALL_PROXY
-source ~/shprofile/bash_aliases
+source ~/.aliases
 
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba init' !!
