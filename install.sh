@@ -3,7 +3,7 @@ script_dir=$(dirname "$0")
 echo "The script is located in: $script_dir"
 
 install_chezmoi() {
-    sh -c "$(curl -fsLS get.chezmoi.io)" -- init --source-path "$script_dir"
+    sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply --source-path "$script_dir"
 }
 
 install_zsh() {
